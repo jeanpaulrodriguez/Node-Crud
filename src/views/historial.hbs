@@ -1,0 +1,58 @@
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-5 offset-md-3">
+            <div class="card card-body bg-dark p-4 text-white rounded-0">
+                <h1>Historial renderizado</h1>
+
+                <form action="/pacientes/{{pacientes._id}}/historial" method="POST">
+                
+                <div>
+      <label for="nombre">Nombre</label>
+      <input
+        type="text"
+        name="nombre"
+        placeholder="Nombre.."
+        id="nombre"
+        class="form-control rounded-0 bg-dark text-white"
+      />
+    </div>
+
+    <div>
+      <label for="tipificacion">Tipificacion:</label>
+      <textarea
+        name="tipificacion"
+        placeholder="tipificacion"
+        id="tipificacion"
+         class="form-control rounded-0 bg-dark text-white"
+      ></textarea>
+    </div>
+
+    <div>
+      <label for="contacto">Contacto</label>
+      <input
+        type="text"
+        name="contacto"
+        placeholder="Contacto.."
+        id="contacto"
+        class="form-control rounded-0 bg-dark text-white"
+      />
+    </div>
+
+    <div>
+      <label for="opciones">Opciones</label>
+      <input
+        type="text"
+        name="opciones"
+        placeholder="Opciones.."
+        id="opciones"
+        class="form-control rounded-0 bg-dark text-white"
+      />
+    </div>
+                </form>
+                
+            </div>
+        </div>    
+    </div>
+</div>

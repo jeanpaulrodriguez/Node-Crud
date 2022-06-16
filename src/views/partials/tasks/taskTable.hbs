@@ -1,0 +1,55 @@
+{{#if pacientes}}
+  <table class="table table-bordered table-hover table-dark">
+    <thead>
+      <tr>
+        <th>Identificacion</th>
+        <th>Nombre</th>
+        <th>Tipificacion</th>
+        <th>Contacto</th>
+        <th>Opciones</th>
+        <th>Operations</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      {{#each pacientes}}
+        <tr>
+          <td>{{@index}}</td>
+          <td>{{nombre}}</td>
+          <td>{{tipificacion}}</td>
+          <td>{{contacto}}</td>
+          <td>{{opciones}}</td>
+          <td>
+
+            {{#if done}}
+              <a
+                href="/pacientes/{{_id}}/toggleDone"
+                class="btn btn-dark mb-2"
+              >Undone</a>
+            {{else}}
+              <a
+                href="/pacientes/{{_id}}/toggleDone"
+                class="btn btn-success mb-2"
+              >Done</a>
+            {{/if}}
+
+            <a href="/pacientes/{{_id}}/delete" class="btn btn-danger mb-2">Delete</a>
+            <a href="/pacientes/{{_id}}/edit" class="btn btn-info mb-2">Update</a>
+            <a href="/pacientes/{{_id}}/historial" class="btn btn-light">Historial Clinico</a>
+          </td>
+        </tr>
+
+      {{/each}}
+
+    </tbody>
+  </table>
+
+{{else}}
+
+  <div class="text-center">
+    <h1>No Tasks</h1>
+    <img src="" />
+  </div>
+
+{{/if}}

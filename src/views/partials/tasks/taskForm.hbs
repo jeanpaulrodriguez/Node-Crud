@@ -1,0 +1,56 @@
+<div class="card card-body p-4 rounded-0 bg-dark text-white">
+
+  <h3>Agregar Paciente</h3>
+
+  <form action="/pacientes/add" method="POST">
+
+    <div>
+      <label for="nombre">Nombre</label>
+      <input
+        type="text"
+        name="nombre"
+        placeholder="Nombre.."
+        id="nombre"
+        class="form-control rounded-0 bg-dark text-white"
+      />
+    </div>
+
+    <div>
+      <label for="tipificacion">Tipificacion:</label>
+      <textarea
+        name="tipificacion"
+        placeholder="tipificacion"
+        id="tipificacion"
+         class="form-control rounded-0 bg-dark text-white"
+      ></textarea>
+    </div>
+
+    <div>
+      <label for="contacto">Contacto</label>
+      <input
+        type="text"
+        name="contacto"
+        placeholder="Contacto.."
+        id="contacto"
+        class="form-control rounded-0 bg-dark text-white"
+      />
+    </div>
+
+    <div>
+      <label for="opciones">Opciones</label>
+      <input
+        type="text"
+        name="opciones"
+        placeholder="Opciones.."
+        id="opciones"
+        class="form-control rounded-0 bg-dark text-white"
+      />
+    </div>
+
+
+
+    <button class="btn btn-primary btn-sm mt-2">add</button>
+
+  </form>
+
+</div>
