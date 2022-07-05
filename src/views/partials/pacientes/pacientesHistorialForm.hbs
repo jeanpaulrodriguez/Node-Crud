@@ -1,0 +1,67 @@
+<div class="card card-body bg-dark p-4 text-white rounded-0">
+        <h1>Historial renderizado</h1>
+
+        <form action="/pacientes/{{pacientes._id}}/agregarHistorial" method="POST">
+
+          <div>
+            <label for="centro">Centro De Salud</label>
+            <input
+              type="text"
+              name="centro"
+              placeholder="..."
+              id="centro"
+              class="form-control rounded-0 bg-dark text-white"
+            />
+          </div>
+
+          <div>
+            <label for="diagnostico">Diagnostico</label>
+            <input
+              type="text"
+              name="diagnostico"
+              placeholder="..."
+              id="diagnostico"
+              class="form-control rounded-0 bg-dark text-white"
+            ></input>
+          </div>
+
+          <div>
+            <label for="indicacion">Indicación Medica</label>
+            <input
+              type="text"
+              name="indicacion"
+              placeholder="..."
+              id="indicacion"
+              class="form-control rounded-0 bg-dark text-white"
+            ></input>
+          </div>
+
+          <div>
+            <label for="exequatur">Exequatur</label>
+            <input
+              type="text"
+              name="exequatur"
+              placeholder="..."
+              id="exequatur"
+              class="form-control rounded-0 bg-dark text-white"
+            />
+          </div>
+
+          <div>
+            <label for="fecha">Fecha Diagnostico</label>
+            <input
+              type="text"
+              name="fecha"
+              placeholder="..."
+              id="fecha"
+              class="form-control rounded-0 bg-dark text-white"
+            />
+          </div>
+
+          
+
+          <button class="btn btn-primary btn-sm mt-2">add</button>
+
+        </form>
+
+      </div>

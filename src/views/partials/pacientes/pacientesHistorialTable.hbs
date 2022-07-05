@@ -1,0 +1,79 @@
+
+
+<div class="container">
+  <div class=" bg-dark p-5 text-white rounded-0">
+    <table class="table table-striped table-hover table-dark">
+
+  <thead>
+    <tr>
+      <td colspan="6">
+        <div class="row mb-3 display-6">
+          <div class="col-md-6 d-flex justify-content-center">
+              <div>
+                Nombre: {{pacientes.nombre}} 
+                <br>
+                Apellido: {{pacientes.apellido}}
+                <br>
+                Celular: {{pacientes.telefono1}} 
+                <br>
+                Cedula: {{pacientes.identificacion}}
+              </div>
+          </div>
+          <div class="col-md-6 d-flex justify-content-center">
+              <div>
+                Tipificacion: {{pacientes.tipificacion}}
+                <br>
+                Peso: {{pacientes.peso}} LB
+                <br>
+                Estatura: {{pacientes.estatura}} CM
+              </div>
+        </div>
+       
+         
+
+      </td>
+    </tr>
+    <tr>
+
+      <td class="h4">
+        <div class="d-flex justify-content-center mb-2">Centro de Salud</div>
+      </td>
+      <td class="h4">
+        <div class="d-flex justify-content-center mb-2"> Diagnostico</div>
+      </td>
+      <td class="h4">
+        <div class="d-flex justify-content-center mb-2">Indicación Medica</div>
+      </td>
+      <td class="h4">
+        <div class="d-flex justify-content-center mb-2">Exequatur</div>
+      </td>
+      <td class="h4">
+        <div class="d-flex justify-content-center mb-2">Fecha Diagnostico</div>
+      </td>
+      <td class="h4">
+        <div class="d-flex justify-content-center mb-2">Anexos</div>
+      </td>
+      
+      
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <tr>
+      <td>{{centro}}</td>
+      <td>{{diagnostico}}</td>
+      <td>{{indicacion}}</td>
+      <td>{{exequatur}}</td>
+      <td>{{updateAt}}</td>
+      <td>Docs</td>
+
+      
+    </tr>
+
+  </tbody>
+        </table>
+  </div>
+</div>
+
+

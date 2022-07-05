@@ -3,53 +3,144 @@
     <div class="col-md-5 offset-md-3">
       <div class="card card-body bg-dark p-4 text-white rounded-0">
 
-      <h1>Actualice a un Paciente</h1>  
-  <form action="/pacientes/{{pacientes._id}}/edit" method="POST">
+        <h1>Actualice a un Paciente</h1>
+        <form action="/pacientes/{{pacientes._id}}/edit" method="POST">
 
-    <div class="mb-3">
-        <input
-      type="text"
-      name="nombre"
-      placeholder="Nombre..."
-      value="{{pacientes.nombre}}"
-      class="form-control rounded-0 bg-dark text-white"
-    />
-    </div>
-    
-<div class="mb-3">
-  <textarea
-      name="tipificacion"
-      rows="3"
-      placeholder="Tipificacion.."
-      class="form-control rounded-0 bg-dark text-white"
-    >{{pacientes.tipificacion}}</textarea>
-</div>
+          <div class="mb-3">
+            <label class="mb-3">Cedula</label>
+            <input
+              type="text"
+              name="identificacion"
+              placeholder="Cedula..."
+              value="{{pacientes.identificacion}}"
+              class="form-control rounded-0 bg-dark text-white"
+            />
+          </div>
+          
+          <div class="mb-3">
+            <label class="mb-3">Nombre</label>
+            <input
+              type="text"
+              name="nombre"
+              placeholder="Nombre..."
+              value="{{pacientes.nombre}}"
+              class="form-control rounded-0 bg-dark text-white"
+            />
+          </div>
 
-    <div class="mb-3">
-        <input
-      type="text"
-      name="contacto"
-      placeholder="Contacto..."
-      value="{{pacientes.contacto}}"
-      class="form-control rounded-0 bg-dark text-white"
-    />
-    </div>
+          <div class="mb-3">
+            <label class="mb-3">Apellido</label>
+            <input
+              type="text"
+              name="apellido"
+              placeholder="Apellido..."
+              value="{{pacientes.apellido}}"
+              class="form-control rounded-0 bg-dark text-white"
+            />
+          </div>
 
-    <div class="mb-3">
-        <input
-      type="text"
-      name="opciones"
-      placeholder="Opciones..."
-      value="{{pacientes.opciones}}"
-      class="form-control rounded-0 bg-dark text-white"
-    />
-    </div>
-    
+          <div class="mb-3">
+            <label class="mb-3">Genero</label>
+            <select class="form-control rounded-0 bg-dark text-white">
+              <option>{{pacientes.genero}}</option>
+            </select>
+              
+          </div>
 
-    <button class="btn btn-primary">Actualice</button>
 
-  </form>
-</div>
+          <div class="mb-3">
+            <label class="mb-3">Peso</label>
+            <input
+              type="text"
+              name="peso"
+              placeholder="Peso..."
+              value="{{pacientes.peso}}"
+              class="form-control rounded-0 bg-dark text-white"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="mb-3">Estatura</label>
+            <input
+              type="text"
+              name="estatura"
+              placeholder="Estatura..."
+              value="{{pacientes.estatura}}"
+              class="form-control rounded-0 bg-dark text-white"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="mb-3">Tipificacion</label>
+            <select class="form-control rounded-0 bg-dark text-white">
+              <option>{{pacientes.tipificacion}}</option>
+            </select>
+              
+          </div>
+
+          <div class="mb-3">
+            <label class="mb-3">Telefono Movil</label>
+            <input
+              type="text"
+              name="telefono1"
+              placeholder="Telefono Movil..."
+              value="{{pacientes.telefono1}}"
+              class="form-control rounded-0 bg-dark text-white"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="mb-3">Telefono Casa</label>
+            <input
+              type="text"
+              name="telefono2"
+              placeholder="Telefono Casa..."
+              value="{{pacientes.telefono2}}"
+              class="form-control rounded-0 bg-dark text-white"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="mb-3">Email</label>
+            <input
+              type="email"
+              name="correoelectronico"
+              placeholder="Email..."
+              value="{{pacientes.correoelectronico}}"
+              class="form-control rounded-0 bg-dark text-white"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="mb-3">Direccion</label>
+            <input
+              type="text"
+              name="direccion"
+              placeholder="Direccion..."
+              value="{{pacientes.direccion}}"
+              class="form-control rounded-0 bg-dark text-white"
+            />
+          </div>
+
+
+          <div class="mb-3">
+
+            <label class="mb-2">Fecha de Creacion</label>
+            <label class="mb-2 form-control rounded-0 bg-dark text-white">
+              {{pacientes.createdAt}}
+            </label>
+
+            <label class="mb-2">Fecha de Modificacion</label>
+            <label class="mb-2 form-control rounded-0 bg-dark text-white">
+              {{pacientes.updatedAt}}
+            </label>
+
+          </div>
+
+          <button class="btn btn-primary">Actualice</button>
+
+        </form>
+      </div>
     </div>
   </div>
 </div>

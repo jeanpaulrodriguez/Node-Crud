@@ -3,10 +3,15 @@
     <thead>
       <tr>
         <th>Identificacion</th>
+        <th>Cedula</th>
         <th>Nombre</th>
+        <th>Apellido</th>
+        <th>Genero</th>
+        <th>Peso</th>
+        <th>Estatura</th>
         <th>Tipificacion</th>
         <th>Contacto</th>
-        <th>Opciones</th>
+        <th>Direccion</th>
         <th>Operations</th>
       </tr>
     </thead>
@@ -16,10 +21,15 @@
       {{#each pacientes}}
         <tr>
           <td>{{@index}}</td>
+          <td>{{identificacion}}</td>
           <td>{{nombre}}</td>
+          <td>{{apellido}}</td>
+          <td>{{genero}}</td>
+          <td>{{peso}}LB</td>
+          <td>{{estatura}}CM</td>
           <td>{{tipificacion}}</td>
-          <td>{{contacto}}</td>
-          <td>{{opciones}}</td>
+          <td>Celular:{{telefono1}}<br>Casa:{{telefono2}}<br>{{correoelectronico}}</td>
+          <td>{{direccion}}</td>
           <td>
 
             {{#if done}}
@@ -47,8 +57,8 @@
 
 {{else}}
 
-  <div class="text-center">
-    <h1>No Tasks</h1>
+  <div class="text-center text-white">
+    <h1>No Hay Pacientes</h1>
     <img src="" />
   </div>
 

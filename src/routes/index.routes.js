@@ -8,6 +8,7 @@ import {
   deletePacientes,
   toggleDone,
   renderPacientesHistorial,
+  createPacientesHistorial,
 } from "../controllers/paciente.controller";
 
 const router = Router();
@@ -26,6 +27,10 @@ router.get("/pacientes/:id/delete", deletePacientes);
 
 router.get("/pacientes/:id/historial", renderPacientesHistorial);
 
+
+router.post("/pacientes/:id/agregarHistorial", createPacientesHistorial);
+
+// router.post("/pacientes/:id/agregarHistorial", createPacientesHistorial)
 
 
 export default router;

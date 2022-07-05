@@ -1,0 +1,143 @@
+<div class="card card-body p-4 rounded-0 bg-dark text-white">
+
+  <h3>Agregar Paciente</h3>
+
+  <form action="/pacientes/add" method="POST">
+
+    <div>
+      <label for="nombre">Nombre</label>
+      <input
+        type="text"
+        name="nombre"
+        placeholder="Nombre.."
+        id="nombre"
+        class="form-control rounded-0 bg-dark text-white"
+      />
+    </div>
+
+    <div>
+      <label for="apellido">Apellido</label>
+      <input
+        type="text"
+        name="apellido"
+        placeholder="Apellido.."
+        id="apellido"
+        class="form-control rounded-0 bg-dark text-white"
+      />
+    </div>
+
+    <div>
+      <label for="identificacion">Identificacion</label>
+      <input
+        type="text"
+        name="identificacion"
+        placeholder="Identificacion.."
+        id="identificacion"
+        class="form-control rounded-0 bg-dark text-white"
+      />
+    </div>
+
+    <div>
+      <label for="genero">Genero</label>
+      <select
+      name="genero"
+      id="genero"
+      class="form-select bg-dark text-white">
+        <option>Masculino</option>
+        <option>Femenino</option>
+        <option>Homosexual</option>
+
+      </select>
+    </div>
+
+    <div>
+      <label for="peso">Peso</label>
+      <input
+        type="number"
+        name="peso"
+        placeholder="Peso.."
+        id="peso"
+        class="form-control rounded-0 bg-dark text-white"
+      />
+    </div>
+
+    <div>
+      <label for="estatura">Estatura</label>
+      <input
+        type="number"
+        name="estatura"
+        placeholder="Estatura.."
+        id="estatura"
+        class="form-control rounded-0 bg-dark text-white"
+      />
+    </div>
+
+    <div>
+      <label for="tipificacion">Tipificacion:</label>
+      <select 
+      name="tipificacion"
+      id="tipificacion"
+      class="form-select bg-dark text-white"
+      >
+        <option>A+</option>
+        <option>A-</option>
+        <option>B+</option>
+        <option>B-</option>
+        <option>AB+</option>
+        <option>AB-</option>
+        <option>O+</option>
+        <option>O-</option>
+
+      </select>
+    </div>
+
+    <div>
+      <label for="telefono1">Telefono Movil</label>
+      <input
+        type="tel"
+        name="telefono1"
+        placeholder="Telefono.."
+        id="telefono1"
+        class="form-control rounded-0 bg-dark text-white"
+      />
+    </div>
+
+    <div>
+      <label for="telefono2">Telefono Casa</label>
+      <input
+        type="tel"
+        name="telefono2"
+        placeholder="Telefono.."
+        id="telefono2"
+        class="form-control rounded-0 bg-dark text-white"
+      />
+    </div>
+
+    <div>
+      <label for="correoelectronico">Email</label>
+      <input
+        type="email"
+        name="correoelectronico"
+        placeholder="Email.."
+        id="correoelectronico"
+        class="form-control rounded-0 bg-dark text-white"
+      />
+    </div>
+
+    <div>
+      <label for="direccion">Direccion</label>
+      <input
+        type="text"
+        name="direccion"
+        placeholder="Direccion.."
+        id="direccion"
+        class="form-control rounded-0 bg-dark text-white"
+      />
+    </div>
+
+  
+    <button class="btn btn-primary btn-sm mt-2">Agregar</button>
+
+  </form>
+
+</div>
